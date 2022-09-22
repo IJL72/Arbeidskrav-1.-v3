@@ -1,0 +1,43 @@
+---
+title: "Table 4, Varians"
+author: "IJL & HH"
+date: "2022-09-21"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, echo=FALSE}
+
+library(tidyverse)
+library(gt)
+library(tidyr)
+library(exscidata)
+library(readxl)
+
+```
+
+```{r, echo=FALSE}
+
+data_run_2 <- read_excel("data/data.run.2.xlsx") 
+
+data_run_2 %>%
+  select(Timepoint,FP, VO2.max, RER.max, lac.max,end.load) %>% 
+  group_by(Timepoint) %>% 
+  summarise(lac = var(lac.max),
+            RER = var(RER.max),
+            VO2 = var(VO2.max),
+            end.load = var(end.load)) %>% 
+  gt(caption = "VARIANCE (Caption)") %>% 
+  fmt_number(columns =lac, decimals = 2) %>% 
+  fmt_number(columns = VO2, decimals = 0) %>% 
+  fmt_number(columns = end.load, decimals = 1) %>% 
+  fmt_number(columns = RER, decimals = 2) %>% 
+  cols_label(Timepoint = "Test",
+             lac = "Max Laktat",
+             RER = "Max RER",
+             VO2 = md("VO<sub>2max</sub><br><small>(ml min<sup>-1</sup>)"),
+             end.load = md("Max fart<br><small>(km t<sup>-1</sup>)")) %>%
+  tab_header(title = "VARIANS") 
+
+```
