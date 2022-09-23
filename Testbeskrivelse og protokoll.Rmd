@@ -5,23 +5,23 @@ date: "2022-09-21"
 output: html_document
 ---
 
-Laktat test ved løp - Gruppe 4
+Laktattest ved løp - Gruppe 4
 
-Vi har gjennomført laktattesting av til sammen  7 masterstudenter i aldersgruppen 23-50 år på mølle (løp). 
+Vi har gjennomført laktattesting av til sammen  7 masterstudenter i aldersgruppen 23-50 år i løping på tredemølle. 
 Det er gjennomført to tester (Pre og Post) av alle, men det er ikke gjennomført intervensjon i perioden mellom testene.
-Grunnet tekniske utfordringer,  ble testprotokollen (fartsøkning) endret etter testing  av to individer. Disse  to er imidlertid testet likt begge ganger. 
+Testen ble gjennomført som en laktatprofil med en standarisert trappetrinnsprotokoll der farten økte med 1,5km/t per drag til forsøkspersonen passerte en laktatkonsentrasjon høyere enn 4mmol/L. Grunnet tekniske utfordringer,  ble testprotokollen (fartsøkning) endret etter testing  av to individer. Disse  to er imidlertid testet likt begge ganger selv om hastighetene ikke var lik på alle trappetrinn som resten av gruppen. 
 
 Det er  tilstrebet å redusere  antall ytre faktorer som kan påvirke  testresultatene gjennom å standardisere forberedelser av testpersonene og testsituasjonen.
 
 Utstyr  benyttet til analyse  har vært det samme gjennom all testing, og  er kalibrert mellom hver test. 
 
-Det er kjent at hydrerings- og ernæringtilstand påvirker testresultater. Redusert energitilgjengelighet (<30 kcal /kg fettfri masse/dag) forventes å påvirke metabolismen og prestasjon negativt. Inntak av karbohydrat i forkant av og under test, medfører økt glykogen tilgjengelighet. Lavt inntak kan medføre  hypoglykemi og  dårligere prestasjon. 
-Koffeininntak i forkant av test har vist økt  prestasjon, men hvis man er vant til å innta koffein daglig, bør  dette også gjøres testdag, da abstinenser kan medføre hodepine og tretthet. Alkoholinntak  kan påvirke hydreringstilstand og  karbohydratmetabolismen og  derved gi redusert  prestasjon. Ref 2.
+Det er kjent at hydrerings- og ernæringtilstand påvirker testresultater. Redusert energitilgjengelighet (<30 kcal /kg fettfri masse/dag) forventes å påvirke metabolismen og prestasjon negativt. Inntak av karbohydrat i forkant av og under test, medfører økt glykogen tilgjengelighet. Lavt inntak kan medføre  hypoglykemi og  dårligere prestasjon.
+Koffeininntak i forkant av test har vist økt  prestasjon, men hvis man er vant til å innta koffein daglig, bør  dette også gjøres testdag, da abstinenser kan medføre hodepine og tretthet. Alkoholinntak  kan påvirke hydreringstilstand og  karbohydratmetabolismen og  derved gi redusert  prestasjon (Tanner & Gore, 2012).
 
 Testpersonene i undersøkelsen er  derfor  forberedt og instruert i å trene, spise og sove  likt før testene. Testutstyr som sko og tøy  har også vært det samme under testing. 
 
 Ut over forberedelse av  testperson, er  det  forhold ved  testsituasjonen som kan påvirke  resultatet.  Temperatur og luftfuktighet  bør  tilstrebes å være lik under all testing. 
-Andre kjente faktorer  som kan påvirke  testresultater er testpersonens kjennskap til testforløpet, tilbakemeldinger testpersonen får underveis, antall testpersoner i lokalet og kjønnsfordeling på disse, “dagsform” eller mentalt overskudd hos testpersonen og om testpersonen hører musikk før og under testing. (ref.1)
+Andre kjente faktorer  som kan påvirke  testresultater er testpersonens kjennskap til testforløpet, tilbakemeldinger testpersonen får underveis, antall testpersoner i lokalet og kjønnsfordeling på disse, “dagsform” eller mentalt overskudd hos testpersonen og om testpersonen hører musikk før og under testing (Halperin et. al., 2015).
 
 Testing er   derfor tilstrebet  gjennomført med:
 Testtidspunkt samme tid på døgnet.
@@ -29,7 +29,7 @@ Samme testleder på pre og post test.
 Samme antall og kjønn  tilstede ved alle tester.
 Ingen musikk før/under test.
 Tilnærmet lik tilbakemelding og engasjement fra testleder.
- Det er pplyst om videre hendelsesforløp før hver endring (forklart test, tempoøkninger, tid igjen osv.)
+ Det er opplyst om videre hendelsesforløp før hver endring (forklart test, tempoøkninger, tid igjen osv.)
 Det er ikke opplyst om puls, laktat og VO2.
 Notert ned evt. når og hvor mye forsøkspersonen drikker/spiser og repetert ved post-test
 
