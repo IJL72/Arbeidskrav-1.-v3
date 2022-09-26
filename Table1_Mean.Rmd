@@ -3,6 +3,8 @@ title: "Arbeidskrav 1 gr 4- table.1"
 author: "IJL & HH"
 format: html
 editor: visual
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r, echo=FALSE}
