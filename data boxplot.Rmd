@@ -1,0 +1,28 @@
+---
+title: "Boxplot"
+author: "IJL & HH"
+date: "2022-09-26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(ggplot2)
+data("data_run_2")
+glimpse(data_run_2)
+
+# Assign a selected set of variables to a smaller data set
+rundat <- select(data_run_2, FP, Timepoint, VO2.max, lac.max, HR.max)
+# Printing the data set
+rundat
+
+# Creating a boxplot of all values per group
+ggplot(data_run_2, aes(FP, lac.max)) 
++ geom_boxplot() + geom_jitter()
+
+
+
+
+```
+

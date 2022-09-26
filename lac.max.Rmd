@@ -1,0 +1,18 @@
+---
+title: "Lac.max"
+author: "IJL & HH"
+date: "2022-09-26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(readxl)
+data_run_2
+dat <- read_excel("data/data.run.2.xlsx") %>%
+        select(FP, Timepoint, lac.max) %>%
+        print()
+```
+
