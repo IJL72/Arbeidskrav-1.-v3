@@ -6,9 +6,9 @@ editor: visual
 bibliography: references.bib
 ---
 
-## Testbeskrivelse
+# Testbeskrivelse
 
-Laktattest ved løp - Gruppe 4
+## Laktatprofil løp
 
 Vi har gjennomført laktattesting av til sammen 7 masterstudenter i aldersgruppen 23-50 år i løping på tredemølle. Det er gjennomført to tester (Pre og Post) av alle, men det er ikke gjennomført intervensjon i perioden mellom testene. Testen ble gjennomført som en laktatprofil med en standarisert trappetrinnsprotokoll der farten økte med 1,5km/t per drag til forsøkspersonen passerte en laktatkonsentrasjon høyere enn 4mmol/L. Grunnet tekniske utfordringer, ble testprotokollen (fartsøkning) endret etter testing av to individer. Disse to er imidlertid testet likt begge ganger selv om hastighetene ikke var lik på alle trappetrinn som resten av gruppen.
 
@@ -26,7 +26,7 @@ Testing er derfor tilstrebet gjennomført med: Testtidspunkt samme tid på døgn
 
 Under testing, er data samlet inn via analysemaskin for laktat (Bionsen) og Jaeger Oxycon Pro, som analyserer ventilasjon, puls, O2 forbruk. Data er hentet ut i etterkant. Innsamlede data er i tillegg sikret løpende manuelt i plotteskjema. Alle data er etterfølgende lagt inn i et excelark (Data_run_2) før videre analyse.
 
-Protokoll for Laktatprofil - løp
+## Protokoll for Laktatprofil - løp
 
 Forsøksperson Ingen hard trening to dager før test Tilnærmet lik trening to dager før test Oppfordring om lik døgnrytme to dager før test Ingen alkohol eller nikotinholdige stoffer to dager før test Ingen koffein samme dag som test (evt lik mengde) Samme mat og drikkeinntak samme dag som test Siste måltid minimum 2 timer før test Samme sko og klær Ta med samme mengde og type mat og drikke til test
 
@@ -38,14 +38,11 @@ Klima Tilstrebe samme temperatur i testlokalet (mellom 18-23\*C) Tilstrebe luftf
 
 Forberedelser Ta på hansker og frakk Skru på Biosen, sett i ny standardløsning Kalibrering av OxyconPro: Åpne for gass Trykk "gass" Lukk for gass Trykk "Volumen" Sette sammen munnstykke og finn neseklype Gjøre klart tape, klyper, kapillærrør, beholdere og stikkere Veie forsøksperson i så lite klær som mulig og uten sko, trekk fra 300 g av vekta pga. klær Legge inn person på dataen; Trykk «New Patient» Før inn etternavn, fornavn, id (initialer og fødselsdato uten punktum), fødselsdato, mann/kvinne, høyde og vekt (300 g trukket fra) Fest den ene enden av slangen til maskinen og den andre til munnstykket, tape fast slangen til mølla. Ta på tape på nesen til forsøksperson Ta på pulsbelte på forsøksperson og start økt på pulsklokka Gjør klart VO2-opptak Trykk inn på «Mixing Chamber» Kontroller at det står «small mouthpiece» og «30 sek delta time» i vinduet som kommer opp, trykk «ok» Trykk «F1» for å klargjøre opptak, etter 15 sek er maskinen klar for test
 
-Laktatprofil
+#### Laktatprofil
 
-Mølle på 1 % stigning Starter på 8,5 km/t 5 min drag, øker 1,5 km/t til 4 mmol/L Lac nås. Trykk «F1» for å starte opptak Start stoppeklokka 1 sek etter opptaket Ta på munnstykket og neseklypa på 1.40 min, sjekke at det ikke er lekkasjer Noter alt av målinger i skjema fra 2.30 min til 4.30 min Munnstykke og neseklype av på 4.30 min Spør om anstrengelse på Borg-skala Ta laktat Nullstill klokka på 5.00 min Juster opp 1,5 km/t Analyser laktat Repeter helt til Lac er over 4 mmol/L
+Mølle på 1 % stigning, 5 min drag med 1 min pause. Utgangshastighet på 8,5 km/t, øker med 1,5km/t per drag til FP måler over 4 mmol/L Lac. Trykk «F1» for å starte opptak. Start stoppeklokka 1 sek etter opptaket. Ta på munnstykket og neseklypa på etter 1.40 min, sjekke at det ikke er lekkasjer. Noter alt av målinger (VO2, puls, RER) i skjema fra 2.30 min til 4.30 min. Munnstykke og neseklype av på 4.30 min Spør om anstrengelse på Borg-skala ved dragslutt. Ta laktat. Nullstill klokka på 6.00 min. Juster opp 1,5 km/t. Analyser laktat. Repeter helt til Lac er over 4 mmol/L.
 
-ref.2 Tanner, R. K., and C. J. Gore. 2012. Physiological Tests for Elite Athletes 2nd Edition. Book. Human\
-Kinetics. <https://books.google.no/books?id=0OPIiMks58MC>.
-
-## Resultater
+# Resultater
 
 ```{r, echo=FALSE}
 
@@ -199,10 +196,8 @@ data_run_2 %>%
 
 ```
 
-
 En feilkilde i vårt forsøk på å avdekke reliabilteten er konstant utskiftning av testpersonell en sentral faktor. Når testene utføres av forskjellig testpersonell vil dette kunne gi utslag på resultatene, og være en feilkilde for spesielt "within-subject variation" [@hopkins2000]. Eksempelvis vil resultatet på laktatprøvene avhenge av hvordan testeren tar selve prøven, hvor lang tid som brukes, og om prøven utføres korrekt.
 
-## Referanser
+# Referanser
 
-Tanner, R. K., and C. J. Gore. 2012. Physiological Tests for Elite Athletes 2nd Edition. Book. Human Kinetics. https://books.google.no/books?id=0OPIiMks58MC 
-
+Tanner, R. K., and C. J. Gore. 2012. Physiological Tests for Elite Athletes 2nd Edition. Book. Human Kinetics. https://books.google.no/books?id=0OPIiMks58MC
