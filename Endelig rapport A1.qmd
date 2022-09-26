@@ -1,0 +1,203 @@
+---
+title: "Rapport til innlevering"
+author: "IJL & HH"
+format: html
+editor: visual
+bibliography: references.bib
+---
+
+# Testbeskrivelse
+
+## Laktatprofil løp
+
+Vi har gjennomført laktattesting av til sammen 7 masterstudenter i aldersgruppen 23-50 år i løping på tredemølle. Det er gjennomført to tester (Pre og Post) av alle, men det er ikke gjennomført intervensjon i perioden mellom testene. Testen ble gjennomført som en laktatprofil med en standarisert trappetrinnsprotokoll der farten økte med 1,5km/t per drag til forsøkspersonen passerte en laktatkonsentrasjon høyere enn 4mmol/L. Grunnet tekniske utfordringer, ble testprotokollen (fartsøkning) endret etter testing av to individer. Disse to er imidlertid testet likt begge ganger selv om hastighetene ikke var lik på alle trappetrinn som resten av gruppen.
+
+Det er tilstrebet å redusere antall ytre faktorer som kan påvirke testresultatene gjennom å standardisere forberedelser av testpersonene og testsituasjonen.
+
+Utstyr benyttet til analyse har vært det samme gjennom all testing, og er kalibrert mellom hver test.
+
+Det er kjent at hydrerings- og ernæringtilstand påvirker testresultater. Redusert energitilgjengelighet (\<30 kcal /kg fettfri masse/dag) forventes å påvirke metabolismen og prestasjon negativt. Inntak av karbohydrat i forkant av og under test, medfører økt glykogen tilgjengelighet. Lavt inntak kan medføre hypoglykemi og dårligere prestasjon. Koffeininntak i forkant av test har vist økt prestasjon, men hvis man er vant til å innta koffein daglig, bør dette også gjøres testdag, da abstinenser kan medføre hodepine og tretthet. Alkoholinntak kan påvirke hydreringstilstand og karbohydratmetabolismen og derved gi redusert prestasjon (Tanner & Gore, 2012).
+
+Testpersonene i undersøkelsen er derfor forberedt og instruert i å trene, spise og sove likt før testene. Testutstyr som sko og tøy har også vært det samme under testing.
+
+Ut over forberedelse av testperson, er det forhold ved testsituasjonen som kan påvirke resultatet. Temperatur og luftfuktighet bør tilstrebes å være lik under all testing. Andre kjente faktorer som kan påvirke testresultater er testpersonens kjennskap til testforløpet, tilbakemeldinger testpersonen får underveis, antall testpersoner i lokalet og kjønnsfordeling på disse, "dagsform" eller mentalt overskudd hos testpersonen og om testpersonen hører musikk før og under testing [@halperin2015].
+
+Testing er derfor tilstrebet gjennomført med: Testtidspunkt samme tid på døgnet. Samme testleder på pre og post test. Samme antall og kjønn tilstede ved alle tester. Ingen musikk før/under test. Tilnærmet lik tilbakemelding og engasjement fra testleder. Det er opplyst om videre hendelsesforløp før hver endring (forklart test, tempoøkninger, tid igjen osv.) Det er ikke opplyst om puls, laktat og VO2. Notert ned evt. når og hvor mye forsøkspersonen drikker/spiser og repetert ved post-test
+
+Under testing, er data samlet inn via analysemaskin for laktat (Bionsen) og Jaeger Oxycon Pro, som analyserer ventilasjon, puls, O2 forbruk. Data er hentet ut i etterkant. Innsamlede data er i tillegg sikret løpende manuelt i plotteskjema. Alle data er etterfølgende lagt inn i et excelark (Data_run_2) før videre analyse.
+
+## Protokoll for Laktatprofil - løp
+
+Forsøksperson Ingen hard trening to dager før test Tilnærmet lik trening to dager før test Oppfordring om lik døgnrytme to dager før test Ingen alkohol eller nikotinholdige stoffer to dager før test Ingen koffein samme dag som test (evt lik mengde) Samme mat og drikkeinntak samme dag som test Siste måltid minimum 2 timer før test Samme sko og klær Ta med samme mengde og type mat og drikke til test
+
+Om test Testtidspunkt samme tid på døgnet Samme testleder på pre og post test Samme antall og kjønn tilstede ved alle tester Ingen musikk før/under test. Tilnærmet lik tilbakemelding og engasjement Opplyse om videre hendelsesforløp før hver endring (forklare test, tempoøkninger, tid igjen osv.) Ikke opplyse om puls, laktat og VO2 Noter ned evt. når og hvor mye forsøkspersonen drikker/spiser og repeter ved post-test
+
+Testutstyr Bionsen; analyserer laktat Jaeger Oxycon Pro analyserer ventilasjon, puls, O2 forbruk.
+
+Klima Tilstrebe samme temperatur i testlokalet (mellom 18-23\*C) Tilstrebe luftfuktighet på mindre enn 70%.
+
+Forberedelser Ta på hansker og frakk Skru på Biosen, sett i ny standardløsning Kalibrering av OxyconPro: Åpne for gass Trykk "gass" Lukk for gass Trykk "Volumen" Sette sammen munnstykke og finn neseklype Gjøre klart tape, klyper, kapillærrør, beholdere og stikkere Veie forsøksperson i så lite klær som mulig og uten sko, trekk fra 300 g av vekta pga. klær Legge inn person på dataen; Trykk «New Patient» Før inn etternavn, fornavn, id (initialer og fødselsdato uten punktum), fødselsdato, mann/kvinne, høyde og vekt (300 g trukket fra) Fest den ene enden av slangen til maskinen og den andre til munnstykket, tape fast slangen til mølla. Ta på tape på nesen til forsøksperson Ta på pulsbelte på forsøksperson og start økt på pulsklokka Gjør klart VO2-opptak Trykk inn på «Mixing Chamber» Kontroller at det står «small mouthpiece» og «30 sek delta time» i vinduet som kommer opp, trykk «ok» Trykk «F1» for å klargjøre opptak, etter 15 sek er maskinen klar for test
+
+#### Laktatprofil
+
+Mølle på 1 % stigning, 5 min drag med 1 min pause. Utgangshastighet på 8,5 km/t, øker med 1,5km/t per drag til FP måler over 4 mmol/L Lac. Trykk «F1» for å starte opptak. Start stoppeklokka 1 sek etter opptaket. Ta på munnstykket og neseklypa på etter 1.40 min, sjekke at det ikke er lekkasjer. Noter alt av målinger (VO2, puls, RER) i skjema fra 2.30 min til 4.30 min. Munnstykke og neseklype av på 4.30 min Spør om anstrengelse på Borg-skala ved dragslutt. Ta laktat. Nullstill klokka på 6.00 min. Juster opp 1,5 km/t. Analyser laktat. Repeter helt til Lac er over 4 mmol/L.
+
+# Resultater
+
+```{r, echo=FALSE}
+
+#| message: false
+#| warning: false
+
+library(gt)
+library(exscidata)
+library(tidyverse)
+library(tidyr)
+library(readxl)
+
+
+```
+
+```{r, echo=FALSE}
+
+
+#| message: false
+#| warning: false
+
+data_run_2 <- read_excel("data/data.run.2.xlsx") 
+
+data_run_2 %>% 
+  select(Timepoint,FP, VO2.max, RER.max, lac.max,end.load) %>% 
+  group_by(Timepoint) %>% 
+  summarise(lac =mean(lac.max),
+            RER = mean(RER.max),
+            VO2 = mean(VO2.max),
+            end.load = mean(end.load)) %>% 
+  gt(caption = "Means") %>% 
+  fmt_number(columns =lac,
+             decimals = 2) %>% 
+  fmt_number(columns = VO2, decimals = 0) %>% 
+  fmt_number(columns = end.load, decimals = 1) %>% 
+  fmt_number(columns = RER, decimals = 2) %>% 
+  cols_label(Timepoint = "Test",
+             lac = "Max Laktat",
+             RER = "Max RER",
+             VO2 = md("VO<sub>2max</sub><br><small>(ml min<sup>-1</sup>)"),
+             end.load = md("Max fart<br><small>(km t<sup>-1</sup>)")) %>% 
+  tab_header(title = "Gjennomsnittlige maksimale verdier")
+
+
+```
+
+```{r, echo=FALSE}
+
+library(tidyverse)
+library(gt)
+library(tidyr)
+library(exscidata)
+library(readxl)
+
+
+```
+
+```{r,echo=FALSE}
+
+data_run_2 <- read_excel("data/data.run.2.xlsx") 
+
+  data_run_2 %>%
+  select(Timepoint,FP, VO2.max, RER.max, lac.max,end.load) %>% 
+  group_by(Timepoint) %>% 
+  summarise(lac = median(lac.max),
+            RER = median(RER.max),
+            VO2 = median(VO2.max),
+            end.load = mean(end.load)) %>% 
+  gt(caption = "Median (Caption)") %>% 
+  fmt_number(columns =lac,
+             decimals = 2) %>% 
+  fmt_number(columns = VO2, decimals =0) %>% 
+  fmt_number(columns = end.load, decimals = 1) %>% 
+  fmt_number(columns = RER, decimals = 2) %>% 
+  cols_label(Timepoint = "Test",
+             lac = "Max Laktat",
+             RER = "Max RER",
+             VO2 = md("VO<sub>2max</sub><br><small>(ml min<sup>-1</sup>)"),
+             end.load = md("Max fart<br><small>(km t<sup>-1</sup>)")) %>% 
+    tab_header(title = "Medianverdier") %>% 
+    tab_footnote(footnote = "median av maksimale verdier")
+
+
+```
+
+```{r,echo=FALSE}
+library(tidyverse)
+library(gt)
+library(tidyr)
+library(exscidata)
+library(readxl)
+
+```
+
+```{r,echo=FALSE}
+data_run_2 <- read_excel("data/data.run.2.xlsx") 
+
+  data_run_2 %>%
+  select(Timepoint,FP, VO2.max, RER.max, lac.max, end.load) %>% 
+  group_by(Timepoint) %>% 
+  summarise(lac = sd(lac.max),
+            RER = sd(RER.max),
+            VO2 = sd(VO2.max),
+            end.load = sd(end.load)) %>% 
+  gt(caption = "SD (Caption)") %>% 
+  fmt_number(columns =lac,
+             decimals = 2) %>% 
+  fmt_number(columns = VO2, decimals =0) %>% 
+  fmt_number(columns = end.load, decimals = 1) %>% 
+  fmt_number(columns = RER, decimals = 2) %>% 
+  cols_label(Timepoint = "Test",
+             lac = "Max Laktat",
+             RER = "Max RER",
+             VO2 = md("VO<sub>2max</sub><br><small>(ml min<sup>-1</sup>)"),
+             end.load = md("Max fart<br><small>(km t<sup>-1</sup>)")) %>% 
+  tab_header(title = "Standardavvik") %>% 
+  tab_footnote(footnote = "SD av maksimale verdier")
+```
+
+```{r, echo=FALSE}
+
+library(tidyverse)
+library(gt)
+library(tidyr)
+library(exscidata)
+library(readxl)
+
+```
+
+```{r}
+data_run_2 <- read_excel("data/data.run.2.xlsx") 
+
+data_run_2 %>%
+  select(Timepoint,FP, VO2.max, RER.max, lac.max,end.load) %>% 
+  group_by(Timepoint) %>% 
+  summarise(lac = var(lac.max),
+            RER = var(RER.max),
+            VO2 = var(VO2.max),
+            end.load = var(end.load)) %>% 
+  gt(caption = "VARIANCE (Caption)") %>% 
+  fmt_number(columns =lac, decimals = 2) %>% 
+  fmt_number(columns = VO2, decimals = 0) %>% 
+  fmt_number(columns = end.load, decimals = 1) %>% 
+  fmt_number(columns = RER, decimals = 2) %>% 
+  cols_label(Timepoint = "Test",
+             lac = "Max Laktat",
+             RER = "Max RER",
+             VO2 = md("VO<sub>2max</sub><br><small>(ml min<sup>-1</sup>)"),
+             end.load = md("Max fart<br><small>(km t<sup>-1</sup>)")) %>%
+  tab_header(title = "VARIANS")
+
+```
+
+En feilkilde i vårt forsøk på å avdekke reliabilteten er konstant utskiftning av testpersonell en sentral faktor. Når testene utføres av forskjellig testpersonell vil dette kunne gi utslag på resultatene, og være en feilkilde for spesielt "within-subject variation" [@hopkins2000]. Eksempelvis vil resultatet på laktatprøvene avhenge av hvordan testeren tar selve prøven, hvor lang tid som brukes, og om prøven utføres korrekt.
+
+# Referanser
+
+Tanner, R. K., and C. J. Gore. 2012. Physiological Tests for Elite Athletes 2nd Edition. Book. Human Kinetics. https://books.google.no/books?id=0OPIiMks58MC
