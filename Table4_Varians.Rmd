@@ -38,7 +38,12 @@ data_run_2 %>%
              lac = "Max Laktat",
              RER = "Max RER",
              VO2 = md("VO<sub>2max</sub><br><small>(ml min<sup>-1</sup>)"),
+<<<<<<< HEAD
              end.load = md("Max fart<br><small>(km t<sup>-1</sup>)")) 
+=======
+             end.load = md("Max fart<br><small>(km t<sup>-1</sup>)")) %>%
+  tab_header(title = "VARIANS")
+>>>>>>> 209b004f97e6fe400f33e0c6f837a80e5063fbd7
 
 
 ```

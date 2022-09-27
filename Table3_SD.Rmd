@@ -12,15 +12,16 @@ library(tidyr)
 library(exscidata)
 library(readxl)
 
+
 ```
 
 
-```{r, echo=FALSE}
+```{r,echo=FALSE}
 
 data_run_2 <- read_excel("data/data.run.2.xlsx") 
 
-data_run_2 %>%
-  select(Timepoint,FP, VO2.max, RER.max, lac.max,end.load) %>% 
+  data_run_2 %>%
+  select(Timepoint,FP, VO2.max, RER.max, lac.max, end.load) %>% 
   group_by(Timepoint) %>% 
   summarise(lac = sd(lac.max),
             RER = sd(RER.max),
@@ -38,7 +39,7 @@ data_run_2 %>%
              VO2 = md("VO<sub>2max</sub><br><small>(ml min<sup>-1</sup>)"),
              end.load = md("Max fart<br><small>(km t<sup>-1</sup>)")) %>% 
   tab_header(title = "Standardavvik") %>% 
-  tab_footnote(footnote = "SD av maksimale verdier") 
+  tab_footnote(footnote = "SD av maksimale verdier")
 
 ```
 
