@@ -10,7 +10,7 @@ bibliography: references.bib
 
 ## Laktatprofil løp
 
-Vi har gjennomført laktattesting av til sammen 7 masterstudenter i aldersgruppen 23-50 år i løping på tredemølle. Det er gjennomført to tester (Pre og Post) av alle, men det er ikke gjennomført intervensjon i perioden mellom testene. Testen ble gjennomført som en laktatprofil med en standarisert trappetrinnsprotokoll der farten økte med 1,5km/t per drag til forsøkspersonen passerte en laktatkonsentrasjon høyere enn 4mmol/L. Grunnet tekniske utfordringer, ble testprotokollen (fartsøkning) endret etter testing av to individer. Disse to er imidlertid testet likt begge ganger selv om hastighetene ikke var lik på alle trappetrinn som resten av gruppen.
+Vi har gjennomført laktattesting av til sammen 7 masterstudenter i aldersgruppen 23-50 år i løping på tredemølle. Det er gjennomført to tester (Pre og Post) av alle, men det er ikke gjennomført intervensjon i perioden mellom testene. Testen ble gjennomført som en laktatprofil med en standarisert trappetrinnsprotokoll der farten økte med 1,5km/t per drag til forsøkspersonen passerte en laktatkonsentrasjon høyere enn 4mmol/L. Grunnet tekniske utfordringer, ble testprotokollen (fartsøkningsintervallet) endret etter testing av to individer. Disse to er imidlertid testet likt begge ganger selv om hastighetene ikke var lik på alle trappetrinn som resten av gruppen.
 
 Det er tilstrebet å redusere antall ytre faktorer som kan påvirke testresultatene gjennom å standardisere forberedelser av testpersonene og testsituasjonen.
 
@@ -40,7 +40,25 @@ Forberedelser Ta på hansker og frakk Skru på Biosen, sett i ny standardløsnin
 
 #### Laktatprofil
 
-Mølle på 1 % stigning, 5 min drag med 1 min pause. Utgangshastighet på 8,5 km/t, øker med 1,5km/t per drag til FP måler over 4 mmol/L Lac. Trykk «F1» for å starte opptak. Start stoppeklokka 1 sek etter opptaket. Ta på munnstykket og neseklypa på etter 1.40 min, sjekke at det ikke er lekkasjer. Noter alt av målinger (VO2, puls, RER) i skjema fra 2.30 min til 4.30 min. Munnstykke og neseklype av på 4.30 min Spør om anstrengelse på Borg-skala ved dragslutt. Ta laktat. Nullstill klokka på 6.00 min. Juster opp 1,5 km/t. Analyser laktat. Repeter helt til Lac er over 4 mmol/L.
+Mølle på 1 % stigning, 5 min drag med 1 min pause. Utgangshastighet på 8,5 km/t, øker med 1,5km/t per drag til FP måler over 4 mmol/L Lac. Trykk «F1» for å starte opptak. Start stoppeklokka 1 sek etter opptaket. Ta på munnstykket og neseklypa på etter 1.40 min, sjekke at det ikke er lekkasjer. Noter alt av målinger (VO2, puls, RER) i skjema fra 2.30 min til 4.30 min. Munnstykke og neseklype av på 4.30 min Spør om anstrengelse på Borg-skala ved dragslutt. Ta laktat. Nullstill klokka på 6.00 min (Etter 1 min pause). Juster opp 1,5 km/t. Analyser laktat. Repeter helt til Lac er over 4 mmol/L.
+
+# Deskriptive data
+
+```{r,echo=FALSE}
+
+library(tidyverse)
+library(readxl)
+library(readr)
+data_run_2
+
+dat <- read_excel("data/data.run.2.xlsx")%>% 
+  
+  
+  select(FP, Gender,Timepoint, Age, Height, Weigth, start.load, end.load, VO2.max,lac.max, HR.max, RER.max) %>% 
+  print()
+
+
+```
 
 # Resultater
 
@@ -196,7 +214,7 @@ data_run_2 %>%
 
 ```
 
-En feilkilde i vårt forsøk på å avdekke reliabilteten er konstant utskiftning av testpersonell en sentral faktor. Når testene utføres av forskjellig testpersonell vil dette kunne gi utslag på resultatene, og være en feilkilde for spesielt "within-subject variation" [@hopkins2000]. Eksempelvis vil resultatet på laktatprøvene avhenge av hvordan testeren tar selve prøven, hvor lang tid som brukes, og om prøven utføres korrekt.
+Vårt forsøk viser svært liten reabilitet for testen vi har har utført, noe som i stor grad kan forklares av en rekke innlysende faktorer. For det første er protokollen endret underveis, og selv om dette ikke skal påvirke forholdet mellom pre- og post-testingen er det en svakhet ved forsøket. Grunnet stort tidspress i labben er også en rekke av forsøkspersonene testet rettEn feilkilde i vårt forsøk på å avdekke reliabilteten er konstant utskiftning av testpersonell en sentral faktor. Når testene utføres av forskjellig testpersonell vil dette kunne gi utslag på resultatene, og være en feilkilde for spesielt "within-subject variation" [@hopkins2000]. Eksempelvis vil resultatet på laktatprøvene avhenge av hvordan testeren tar selve prøven, hvor lang tid som brukes, og om prøven utføres korrekt.
 
 # Referanser
 
