@@ -4,6 +4,8 @@ author: "IJL & HH"
 format: html
 editor: visual
 bibliography: references.bib
+editor_options: 
+  chunk_output_type: console
 ---
 
 # Testbeskrivelse
@@ -28,31 +30,31 @@ Under testing, er data samlet inn via analysemaskin for laktat (Bionsen) og Jaeg
 
 ## Protokoll for Laktatprofil - løp
 
-Forsøksperson Ingen hard trening to dager før test Tilnærmet lik trening to dager før test Oppfordring om lik døgnrytme to dager før test Ingen alkohol eller nikotinholdige stoffer to dager før test Ingen koffein samme dag som test (evt lik mengde) Samme mat og drikkeinntak samme dag som test Siste måltid minimum 2 timer før test Samme sko og klær Ta med samme mengde og type mat og drikke til test
+Forsøksperson: Ingen hard trening to dager før test. Tilnærmet lik trening to dager før test. Oppfordring om lik døgnrytme to dager før test. Ingen alkohol eller nikotinholdige stoffer to dager før test. Ingen koffein samme dag som test (evt lik mengde). Samme mat og drikkeinntak samme dag som test. Siste måltid minimum 2 timer før test. Samme sko og klær. Ta med samme mengde og type mat og drikke til test.
 
-Om test Testtidspunkt samme tid på døgnet Samme testleder på pre og post test Samme antall og kjønn tilstede ved alle tester Ingen musikk før/under test. Tilnærmet lik tilbakemelding og engasjement Opplyse om videre hendelsesforløp før hver endring (forklare test, tempoøkninger, tid igjen osv.) Ikke opplyse om puls, laktat og VO2 Noter ned evt. når og hvor mye forsøkspersonen drikker/spiser og repeter ved post-test
+Om test: Test-tidspunkt samme tid på døgnet. Samme testleder på pre og post test. Samme antall og kjønn tilstede ved alle tester. Ingen musikk før/under test. Tilnærmet lik tilbakemelding og engasjement. Opplyse om videre hendelsesforløp før hver endring (forklare test, tempoøkninger, tid igjen osv.). Ikke opplyse om puls, laktat og VO2. Noter ned evt. når og hvor mye forsøkspersonen drikker/spiser og repeter ved post-test.
 
-Testutstyr Bionsen; analyserer laktat Jaeger Oxycon Pro analyserer ventilasjon, puls, O2 forbruk.
+Testutstyr: Bionsen; analyserer laktat. Jaeger Oxycon Pro analyserer ventilasjon, puls, O2 forbruk.
 
-Klima Tilstrebe samme temperatur i testlokalet (mellom 18-23\*C) Tilstrebe luftfuktighet på mindre enn 70%.
+Klima: Tilstrebe samme temperatur i testlokalet (mellom 18-23\*C). Tilstrebe luftfuktighet på mindre enn 70%.
 
-Forberedelser Ta på hansker og frakk Skru på Biosen, sett i ny standardløsning Kalibrering av OxyconPro: Åpne for gass Trykk "gass" Lukk for gass Trykk "Volumen" Sette sammen munnstykke og finn neseklype Gjøre klart tape, klyper, kapillærrør, beholdere og stikkere Veie forsøksperson i så lite klær som mulig og uten sko, trekk fra 300 g av vekta pga. klær Legge inn person på dataen; Trykk «New Patient» Før inn etternavn, fornavn, id (initialer og fødselsdato uten punktum), fødselsdato, mann/kvinne, høyde og vekt (300 g trukket fra) Fest den ene enden av slangen til maskinen og den andre til munnstykket, tape fast slangen til mølla. Ta på tape på nesen til forsøksperson Ta på pulsbelte på forsøksperson og start økt på pulsklokka Gjør klart VO2-opptak Trykk inn på «Mixing Chamber» Kontroller at det står «small mouthpiece» og «30 sek delta time» i vinduet som kommer opp, trykk «ok» Trykk «F1» for å klargjøre opptak, etter 15 sek er maskinen klar for test
+Forberedelser: Ta på hansker og frakk. Skru på Biosen, sett i ny standardløsning. Kalibrering av OxyconPro: Åpne for gass. Trykk "gass". Lukk for gass. Trykk "Volumen". Sette sammen munnstykke og finn neseklype. Gjøre klart tape, klyper, kapillærrør, beholdere og stikkere. Veie forsøksperson i så lite klær som mulig og uten sko, trekk fra 300 g av vekta pga. klær. Legg inn person på dataen; Trykk «New Patient». Før inn etternavn, fornavn, id (initialer og fødselsdato uten punktum), fødselsdato, mann/kvinne, høyde og vekt (300 g trukket fra). Fest den ene enden av slangen til maskinen og den andre til munnstykket, tape fast slangen til mølla. Ta på tape på nesen til forsøksperson. Ta på pulsbelte på forsøksperson og start økt på pulsklokka. Gjør klart VO2-opptak. Trykk inn på «Mixing Chamber». Kontroller at det står «small mouthpiece» og «30 sek delta time» i vinduet som kommer opp, trykk «ok». Trykk «F1» for å klargjøre opptak, etter 15 sek er maskinen klar for test.
 
 #### Laktatprofil
 
-Mølle på 1 % stigning, 5 min drag med 1 min pause. Utgangshastighet på 8,5 km/t, øker med 1,5km/t per drag til FP måler over 4 mmol/L Lac. Trykk «F1» for å starte opptak. Start stoppeklokka 1 sek etter opptaket. Ta på munnstykket og neseklypa på etter 1.40 min, sjekke at det ikke er lekkasjer. Noter alt av målinger (VO2, puls, RER) i skjema fra 2.30 min til 4.30 min. Munnstykke og neseklype av på 4.30 min Spør om anstrengelse på Borg-skala ved dragslutt. Ta laktat. Nullstill klokka på 6.00 min (Etter 1 min pause). Juster opp 1,5 km/t. Analyser laktat. Repeter helt til Lac er over 4 mmol/L.
+Mølle på 1 % stigning, 5 min drag med 1 min pause. Utgangshastighet på 8,5 km/t, øker med 1,5km/t per drag til FP måler over 4 mmol/L Lac. Trykk «F1» for å starte opptak. Start stoppeklokka 1 sek etter opptaket. Ta på munnstykket og neseklypa på etter 1.40 min, sjekk at det ikke er lekkasjer. Noter alt av målinger (VO2, puls, RER) i skjema fra 2.30 min til 4.30 min. Munnstykke og neseklype av på 4.30 min Spør om anstrengelse på Borg-skala ved dragslutt. Ta laktat. Nullstill klokka på 6.00 min (Etter 1 min pause). Juster opp 1,5 km/t. Analyser laktat. Repeter helt til Lac er over 4 mmol/L.
 
 # Deskriptive data
 
-```{r,echo=FALSE}
+```{r}
 #| message: false
 #| warning: false
 #| include: false
+#| echo: false
 
 library(tidyverse)
 library(readxl)
 library(readr)
-
 
 data_run_2 <- read_excel("data/data.run.2.xlsx")%>% 
   
@@ -61,8 +63,6 @@ data_run_2 <- read_excel("data/data.run.2.xlsx")%>%
   print()
 
 ```
-
-
 
 ```{r, echo = FALSE}
 library(ggplot2)
@@ -77,7 +77,6 @@ ggplot(data = data_run_2, mapping = aes(x =  Timepoint, y = lac.max)) +
        title = "Maksimal laktat")
 
 ```
-
 
 # Resultater
 
@@ -256,8 +255,7 @@ cv = 100 * (te / m)) %>%
 print()
 ```
 
-
-Vårt forsøk viser svært liten reabilitet for testen vi har har utført, noe som i stor grad kan forklares av en rekke innlysende faktorer. For det første er protokollen endret underveis, og selv om dette ikke skal påvirke forholdet mellom pre- og post-testingen er det en svakhet ved forsøket. Grunnet stort tidspress i labben er også en rekke av forsøkspersonene testet rett hverandre, med kun 10 minutter mellom testene. En feilkilde er konstant utskiftning av testpersonell en sentral faktor. Når testene utføres av forskjellig testpersonell vil dette kunne gi utslag på resultatene, og være en feilkilde for spesielt "within-subject variation" [@hopkins2000]. Eksempelvis vil resultatet på laktatprøvene avhenge av hvordan testeren tar selve prøven, hvor lang tid som brukes, og om prøven utføres korrekt.
+I vårt forsøk er Typical Error (TE) beregnet til 1,08. Standardavvik er befor testen vi har har utført, noe som i stor grad kan forklares av en rekke innlysende faktorer. For det første er protokollen endret underveis, og selv om dette ikke skal påvirke forholdet mellom pre- og post-testingen er det en svakhet ved forsøket. Grunnet stort tidspress i labben er også en rekke av forsøkspersonene testet rett hverandre, med kun 10 minutter mellom testene. En feilkilde er konstant utskiftning av testpersonell en sentral faktor. Når testene utføres av forskjellig testpersonell vil dette kunne gi utslag på resultatene, og være en feilkilde for spesielt "within-subject variation" [@hopkins2000]. Eksempelvis vil resultatet på laktatprøvene avhenge av hvordan testeren tar selve prøven, hvor lang tid som brukes, og om prøven utføres korrekt.
 
 # Referanser
 
