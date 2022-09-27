@@ -215,6 +215,7 @@ library(readxl)
 ```
 
 ```{r}
+#| echo: false
 data_run_2 <- read_excel("data/data.run.2.xlsx") 
 
 data_run_2 %>%
@@ -237,6 +238,24 @@ data_run_2 %>%
   tab_header(title = "VARIANS")
 
 ```
+
+```{r setup, include=FALSE}
+
+data_run_2 <- read_excel("data/data.run.2.xlsx")
+
+data_run_2 %>%
+select(FP, Timepoint, lac.max) %>%
+
+pivot_wider(names_from = Timepoint,
+values_from = lac.max) %>%
+mutate(diff = Post - Pre) %>%
+summarise(s = sd(diff),
+te = s / sqrt(2),
+m = mean(c(Pre, Post)),
+cv = 100 * (te / m)) %>%
+print()
+```
+
 
 Vårt forsøk viser svært liten reabilitet for testen vi har har utført, noe som i stor grad kan forklares av en rekke innlysende faktorer. For det første er protokollen endret underveis, og selv om dette ikke skal påvirke forholdet mellom pre- og post-testingen er det en svakhet ved forsøket. Grunnet stort tidspress i labben er også en rekke av forsøkspersonene testet rett hverandre, med kun 10 minutter mellom testene. En feilkilde er konstant utskiftning av testpersonell en sentral faktor. Når testene utføres av forskjellig testpersonell vil dette kunne gi utslag på resultatene, og være en feilkilde for spesielt "within-subject variation" [@hopkins2000]. Eksempelvis vil resultatet på laktatprøvene avhenge av hvordan testeren tar selve prøven, hvor lang tid som brukes, og om prøven utføres korrekt.
 
