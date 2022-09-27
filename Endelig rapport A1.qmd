@@ -45,11 +45,12 @@ Mølle på 1 % stigning, 5 min drag med 1 min pause. Utgangshastighet på 8,5 km
 # Deskriptive data
 
 ```{r,echo=FALSE}
+#| message: false
+#| warning: false
 
 library(tidyverse)
 library(readxl)
 library(readr)
-data_run_2
 
 
 data_run_2 <- read_excel("data/data.run.2.xlsx")%>% 
@@ -60,8 +61,7 @@ data_run_2 <- read_excel("data/data.run.2.xlsx")%>%
 
 ```
 
-```{}
-```
+
 
 ```{r, echo = FALSE}
 library(ggplot2)
@@ -147,7 +147,7 @@ data_run_2 <- read_excel("data/data.run.2.xlsx")
             RER = median(RER.max),
             VO2 = median(VO2.max),
             end.load = mean(end.load)) %>% 
-  gt(caption = "Median (Caption)") %>% 
+  gt(caption = "Median") %>% 
   fmt_number(columns =lac,
              decimals = 2) %>% 
   fmt_number(columns = VO2, decimals =0) %>% 
@@ -174,6 +174,9 @@ library(readxl)
 ```
 
 ```{r,echo=FALSE}
+
+#| message: false
+#| warning: false
 data_run_2 <- read_excel("data/data.run.2.xlsx") 
 
   data_run_2 %>%
@@ -183,7 +186,7 @@ data_run_2 <- read_excel("data/data.run.2.xlsx")
             RER = sd(RER.max),
             VO2 = sd(VO2.max),
             end.load = sd(end.load)) %>% 
-  gt(caption = "SD (Caption)") %>% 
+  gt(caption = "SD") %>% 
   fmt_number(columns =lac,
              decimals = 2) %>% 
   fmt_number(columns = VO2, decimals =0) %>% 
@@ -199,6 +202,8 @@ data_run_2 <- read_excel("data/data.run.2.xlsx")
 ```
 
 ```{r, echo=FALSE}
+#| message: false
+#| warning: false
 
 library(tidyverse)
 library(gt)
@@ -218,7 +223,7 @@ data_run_2 %>%
             RER = var(RER.max),
             VO2 = var(VO2.max),
             end.load = var(end.load)) %>% 
-  gt(caption = "VARIANCE (Caption)") %>% 
+  gt(caption = "VARIANCE") %>% 
   fmt_number(columns =lac, decimals = 2) %>% 
   fmt_number(columns = VO2, decimals = 0) %>% 
   fmt_number(columns = end.load, decimals = 1) %>% 

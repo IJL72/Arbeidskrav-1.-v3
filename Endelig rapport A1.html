@@ -21,6 +21,88 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -66,57 +148,96 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="testbeskrivelse" class="level2">
-<h2 class="anchored" data-anchor-id="testbeskrivelse">Testbeskrivelse</h2>
-<p>Laktattest ved løp - Gruppe 4</p>
-<p>Vi har gjennomført laktattesting av til sammen 7 masterstudenter i aldersgruppen 23-50 år i løping på tredemølle. Det er gjennomført to tester (Pre og Post) av alle, men det er ikke gjennomført intervensjon i perioden mellom testene. Testen ble gjennomført som en laktatprofil med en standarisert trappetrinnsprotokoll der farten økte med 1,5km/t per drag til forsøkspersonen passerte en laktatkonsentrasjon høyere enn 4mmol/L. Grunnet tekniske utfordringer, ble testprotokollen (fartsøkning) endret etter testing av to individer. Disse to er imidlertid testet likt begge ganger selv om hastighetene ikke var lik på alle trappetrinn som resten av gruppen.</p>
+<section id="testbeskrivelse" class="level1">
+<h1>Testbeskrivelse</h1>
+<section id="laktatprofil-løp" class="level2">
+<h2 class="anchored" data-anchor-id="laktatprofil-løp">Laktatprofil løp</h2>
+<p>Vi har gjennomført laktattesting av til sammen 7 masterstudenter i aldersgruppen 23-50 år i løping på tredemølle. Det er gjennomført to tester (Pre og Post) av alle, men det er ikke gjennomført intervensjon i perioden mellom testene. Testen ble gjennomført som en laktatprofil med en standarisert trappetrinnsprotokoll der farten økte med 1,5km/t per drag til forsøkspersonen passerte en laktatkonsentrasjon høyere enn 4mmol/L. Grunnet tekniske utfordringer, ble testprotokollen (fartsøkningsintervallet) endret etter testing av to individer. Disse to er imidlertid testet likt begge ganger selv om hastighetene ikke var lik på alle trappetrinn som resten av gruppen.</p>
 <p>Det er tilstrebet å redusere antall ytre faktorer som kan påvirke testresultatene gjennom å standardisere forberedelser av testpersonene og testsituasjonen.</p>
 <p>Utstyr benyttet til analyse har vært det samme gjennom all testing, og er kalibrert mellom hver test.</p>
 <p>Det er kjent at hydrerings- og ernæringtilstand påvirker testresultater. Redusert energitilgjengelighet (&lt;30 kcal /kg fettfri masse/dag) forventes å påvirke metabolismen og prestasjon negativt. Inntak av karbohydrat i forkant av og under test, medfører økt glykogen tilgjengelighet. Lavt inntak kan medføre hypoglykemi og dårligere prestasjon. Koffeininntak i forkant av test har vist økt prestasjon, men hvis man er vant til å innta koffein daglig, bør dette også gjøres testdag, da abstinenser kan medføre hodepine og tretthet. Alkoholinntak kan påvirke hydreringstilstand og karbohydratmetabolismen og derved gi redusert prestasjon (Tanner &amp; Gore, 2012).</p>
 <p>Testpersonene i undersøkelsen er derfor forberedt og instruert i å trene, spise og sove likt før testene. Testutstyr som sko og tøy har også vært det samme under testing.</p>
-<p>Ut over forberedelse av testperson, er det forhold ved testsituasjonen som kan påvirke resultatet. Temperatur og luftfuktighet bør tilstrebes å være lik under all testing. Andre kjente faktorer som kan påvirke testresultater er testpersonens kjennskap til testforløpet, tilbakemeldinger testpersonen får underveis, antall testpersoner i lokalet og kjønnsfordeling på disse, “dagsform” eller mentalt overskudd hos testpersonen og om testpersonen hører musikk før og under testing (Halperin et. al., 2015).</p>
+<p>Ut over forberedelse av testperson, er det forhold ved testsituasjonen som kan påvirke resultatet. Temperatur og luftfuktighet bør tilstrebes å være lik under all testing. Andre kjente faktorer som kan påvirke testresultater er testpersonens kjennskap til testforløpet, tilbakemeldinger testpersonen får underveis, antall testpersoner i lokalet og kjønnsfordeling på disse, “dagsform” eller mentalt overskudd hos testpersonen og om testpersonen hører musikk før og under testing <span class="citation" data-cites="halperin2015">(<a href="#ref-halperin2015" role="doc-biblioref">Halperin, Pyne, and Martin 2015</a>)</span>.</p>
 <p>Testing er derfor tilstrebet gjennomført med: Testtidspunkt samme tid på døgnet. Samme testleder på pre og post test. Samme antall og kjønn tilstede ved alle tester. Ingen musikk før/under test. Tilnærmet lik tilbakemelding og engasjement fra testleder. Det er opplyst om videre hendelsesforløp før hver endring (forklart test, tempoøkninger, tid igjen osv.) Det er ikke opplyst om puls, laktat og VO2. Notert ned evt. når og hvor mye forsøkspersonen drikker/spiser og repetert ved post-test</p>
-<p>Under testing, er data samlet inn via analysemaskin for laktat (Bionsen) og Jaeger Oxycon Pro, som analyserer ventilasjon, puls, O2 forbruk. Data er hentet ut i etterkant. Innsamlede data er i tillegg sikret løpende manuelt i plotteskjema. Alle data er etterfølgende lagt inn i et excelark (Data.run) før videre analyse.</p>
-<p>Protokoll for Laktatprofil - løp</p>
+<p>Under testing, er data samlet inn via analysemaskin for laktat (Bionsen) og Jaeger Oxycon Pro, som analyserer ventilasjon, puls, O2 forbruk. Data er hentet ut i etterkant. Innsamlede data er i tillegg sikret løpende manuelt i plotteskjema. Alle data er etterfølgende lagt inn i et excelark (Data_run_2) før videre analyse.</p>
+</section>
+<section id="protokoll-for-laktatprofil---løp" class="level2">
+<h2 class="anchored" data-anchor-id="protokoll-for-laktatprofil---løp">Protokoll for Laktatprofil - løp</h2>
 <p>Forsøksperson Ingen hard trening to dager før test Tilnærmet lik trening to dager før test Oppfordring om lik døgnrytme to dager før test Ingen alkohol eller nikotinholdige stoffer to dager før test Ingen koffein samme dag som test (evt lik mengde) Samme mat og drikkeinntak samme dag som test Siste måltid minimum 2 timer før test Samme sko og klær Ta med samme mengde og type mat og drikke til test</p>
 <p>Om test Testtidspunkt samme tid på døgnet Samme testleder på pre og post test Samme antall og kjønn tilstede ved alle tester Ingen musikk før/under test. Tilnærmet lik tilbakemelding og engasjement Opplyse om videre hendelsesforløp før hver endring (forklare test, tempoøkninger, tid igjen osv.) Ikke opplyse om puls, laktat og VO2 Noter ned evt. når og hvor mye forsøkspersonen drikker/spiser og repeter ved post-test</p>
 <p>Testutstyr Bionsen; analyserer laktat Jaeger Oxycon Pro analyserer ventilasjon, puls, O2 forbruk.</p>
 <p>Klima Tilstrebe samme temperatur i testlokalet (mellom 18-23*C) Tilstrebe luftfuktighet på mindre enn 70%.</p>
 <p>Forberedelser Ta på hansker og frakk Skru på Biosen, sett i ny standardløsning Kalibrering av OxyconPro: Åpne for gass Trykk “gass” Lukk for gass Trykk “Volumen” Sette sammen munnstykke og finn neseklype Gjøre klart tape, klyper, kapillærrør, beholdere og stikkere Veie forsøksperson i så lite klær som mulig og uten sko, trekk fra 300 g av vekta pga. klær Legge inn person på dataen; Trykk «New Patient» Før inn etternavn, fornavn, id (initialer og fødselsdato uten punktum), fødselsdato, mann/kvinne, høyde og vekt (300 g trukket fra) Fest den ene enden av slangen til maskinen og den andre til munnstykket, tape fast slangen til mølla. Ta på tape på nesen til forsøksperson Ta på pulsbelte på forsøksperson og start økt på pulsklokka Gjør klart VO2-opptak Trykk inn på «Mixing Chamber» Kontroller at det står «small mouthpiece» og «30 sek delta time» i vinduet som kommer opp, trykk «ok» Trykk «F1» for å klargjøre opptak, etter 15 sek er maskinen klar for test</p>
-<p>Laktatprofil</p>
-<p>Mølle på 1 % stigning Starter på 8,5 km/t 5 min drag, øker 1,5 km/t til 4 mmol/L Lac nås. Trykk «F1» for å starte opptak Start stoppeklokka 1 sek etter opptaket Ta på munnstykket og neseklypa på 1.40 min, sjekke at det ikke er lekkasjer Noter alt av målinger i skjema fra 2.30 min til 4.30 min Munnstykke og neseklype av på 4.30 min Spør om anstrengelse på Borg-skala Ta laktat Nullstill klokka på 5.00 min Juster opp 1,5 km/t Analyser laktat Repeter helt til Lac er over 4 mmol/L</p>
-<p>ref.1: Halperin, I., D. B. Pyne, and D. T. Martin. 2015. “Threats to Internal Validity in Exercise Science: A Review of Overlooked Confounding Variables.” Journal Article. Int J Sports Physiol Perform 10 (7): 823–29. https://doi.org/10.1123/ijspp.2014-0566.</p>
-<p>ref.2 Tanner, R. K., and C. J. Gore. 2012. Physiological Tests for Elite Athletes 2nd Edition. Book. Human Kinetics. https://books.google.no/books?id=0OPIiMks58MC.</p>
+<section id="laktatprofil" class="level4">
+<h4 class="anchored" data-anchor-id="laktatprofil">Laktatprofil</h4>
+<p>Mølle på 1 % stigning, 5 min drag med 1 min pause. Utgangshastighet på 8,5 km/t, øker med 1,5km/t per drag til FP måler over 4 mmol/L Lac. Trykk «F1» for å starte opptak. Start stoppeklokka 1 sek etter opptaket. Ta på munnstykket og neseklypa på etter 1.40 min, sjekke at det ikke er lekkasjer. Noter alt av målinger (VO2, puls, RER) i skjema fra 2.30 min til 4.30 min. Munnstykke og neseklype av på 4.30 min Spør om anstrengelse på Borg-skala ved dragslutt. Ta laktat. Nullstill klokka på 6.00 min (Etter 1 min pause). Juster opp 1,5 km/t. Analyser laktat. Repeter helt til Lac er over 4 mmol/L.</p>
 </section>
-<section id="resultater" class="level2">
-<h2 class="anchored" data-anchor-id="resultater">Resultater</h2>
+</section>
+</section>
+<section id="deskriptive-data" class="level1">
+<h1>Deskriptive data</h1>
 <div class="cell">
-
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 14 × 12
+      FP Gender Timepoint   Age Height Weigth start.load end.l…¹ VO2.max lac.max
+   &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;     &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;      &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;
+ 1     1 Male   Pre          24    195   86         10      19      5293    8.31
+ 2     1 Male   Post         24    195   86         13      19      5224    5.33
+ 3     2 Female Pre          50    169   56.1        8.5    11.5    2239    5.68
+ 4     2 Female Post         50    169   56.1        8.5    11.5    2290    5.2 
+ 5     3 Male   Pre          23    175   81.9        8.5    16      4525    6.14
+ 6     3 Male   Post         23    175   81.9        8.5    14.5    3937    5   
+ 7     4 Male   Pre          29    180   93.4       12      15      4527    4.47
+ 8     4 Male   Post         29    180   93.1       10      15      4613    4.12
+ 9     5 Male   Pre          25    191   80.7        8.5    14.5    4179    7.45
+10     5 Male   Post         25    191   79.9        8.5    14.5    4201    5.41
+11     6 Female Pre          23    171   70.6        8.5    11.5    3142    5.88
+12     6 Female Post         23    171   70.6        8.5    11.5    3386    7.52
+13     7 Female Pre          23    160   66.5        8.5    11      2852    8.88
+14     7 Female Post         23    160   66.4        8.5    11      2809    9.28
+# … with 2 more variables: HR.max &lt;chr&gt;, RER.max &lt;dbl&gt;, and abbreviated
+#   variable name ¹​end.load</code></pre>
 </div>
-<div class="cell">
-
 </div>
 <div class="cell">
 <div class="cell-output cell-output-stderr">
-<pre><code>── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
-✔ ggplot2 3.3.6      ✔ purrr   0.3.4 
-✔ tibble  3.1.8      ✔ dplyr   1.0.10
-✔ tidyr   1.2.1      ✔ stringr 1.4.1 
-✔ readr   2.1.2      ✔ forcats 0.5.2 
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()</code></pre>
+<pre><code>Warning in data("data_run_2"): data set 'data_run_2' not found</code></pre>
 </div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 14
+Columns: 12
+$ FP         &lt;dbl&gt; 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7
+$ Gender     &lt;chr&gt; "Male", "Male", "Female", "Female", "Male", "Male", "Male",…
+$ Timepoint  &lt;chr&gt; "Pre", "Post", "Pre", "Post", "Pre", "Post", "Pre", "Post",…
+$ Age        &lt;dbl&gt; 24, 24, 50, 50, 23, 23, 29, 29, 25, 25, 23, 23, 23, 23
+$ Height     &lt;dbl&gt; 195, 195, 169, 169, 175, 175, 180, 180, 191, 191, 171, 171,…
+$ Weigth     &lt;dbl&gt; 86.0, 86.0, 56.1, 56.1, 81.9, 81.9, 93.4, 93.1, 80.7, 79.9,…
+$ start.load &lt;dbl&gt; 10.0, 13.0, 8.5, 8.5, 8.5, 8.5, 12.0, 10.0, 8.5, 8.5, 8.5, …
+$ end.load   &lt;dbl&gt; 19.0, 19.0, 11.5, 11.5, 16.0, 14.5, 15.0, 15.0, 14.5, 14.5,…
+$ VO2.max    &lt;dbl&gt; 5293, 5224, 2239, 2290, 4525, 3937, 4527, 4613, 4179, 4201,…
+$ lac.max    &lt;dbl&gt; 8.31, 5.33, 5.68, 5.20, 6.14, 5.00, 4.47, 4.12, 7.45, 5.41,…
+$ HR.max     &lt;chr&gt; "196", "201", "168", "169", "182", "180", "180", "175", "NA…
+$ RER.max    &lt;dbl&gt; 1.00, 1.01, 0.99, 0.96, 1.01, 1.03, 0.96, 0.99, 1.10, 1.20,…</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="Endelig-rapport-A1_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="resultater" class="level1">
+<h1>Resultater</h1>
+<div class="cell">
+
 </div>
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="tmkbvkkimq" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="vpqzophouf" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#tmkbvkkimq) .gt_table {
+:where(#vpqzophouf) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -141,7 +262,7 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-:where(#tmkbvkkimq) .gt_heading {
+:where(#vpqzophouf) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -153,7 +274,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#tmkbvkkimq) .gt_title {
+:where(#vpqzophouf) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -165,7 +286,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-:where(#tmkbvkkimq) .gt_subtitle {
+:where(#vpqzophouf) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -177,13 +298,13 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-:where(#tmkbvkkimq) .gt_bottom_border {
+:where(#vpqzophouf) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#tmkbvkkimq) .gt_col_headings {
+:where(#vpqzophouf) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -198,7 +319,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#tmkbvkkimq) .gt_col_heading {
+:where(#vpqzophouf) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -218,7 +339,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-:where(#tmkbvkkimq) .gt_column_spanner_outer {
+:where(#vpqzophouf) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -230,15 +351,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-:where(#tmkbvkkimq) .gt_column_spanner_outer:first-child {
+:where(#vpqzophouf) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#tmkbvkkimq) .gt_column_spanner_outer:last-child {
+:where(#vpqzophouf) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#tmkbvkkimq) .gt_column_spanner {
+:where(#vpqzophouf) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -250,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-:where(#tmkbvkkimq) .gt_group_heading {
+:where(#vpqzophouf) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -275,7 +396,7 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-:where(#tmkbvkkimq) .gt_empty_group_heading {
+:where(#vpqzophouf) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -290,15 +411,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-:where(#tmkbvkkimq) .gt_from_md > :first-child {
+:where(#vpqzophouf) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#tmkbvkkimq) .gt_from_md > :last-child {
+:where(#vpqzophouf) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#tmkbvkkimq) .gt_row {
+:where(#vpqzophouf) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -317,7 +438,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-:where(#tmkbvkkimq) .gt_stub {
+:where(#vpqzophouf) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -330,7 +451,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#tmkbvkkimq) .gt_stub_row_group {
+:where(#vpqzophouf) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -344,11 +465,11 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-:where(#tmkbvkkimq) .gt_row_group_first td {
+:where(#vpqzophouf) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#tmkbvkkimq) .gt_summary_row {
+:where(#vpqzophouf) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -358,16 +479,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#tmkbvkkimq) .gt_first_summary_row {
+:where(#vpqzophouf) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#tmkbvkkimq) .gt_first_summary_row.thick {
+:where(#vpqzophouf) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#tmkbvkkimq) .gt_last_summary_row {
+:where(#vpqzophouf) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -377,7 +498,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-:where(#tmkbvkkimq) .gt_grand_summary_row {
+:where(#vpqzophouf) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -387,7 +508,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#tmkbvkkimq) .gt_first_grand_summary_row {
+:where(#vpqzophouf) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -397,11 +518,11 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-:where(#tmkbvkkimq) .gt_striped {
+:where(#vpqzophouf) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#tmkbvkkimq) .gt_table_body {
+:where(#vpqzophouf) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -410,7 +531,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-:where(#tmkbvkkimq) .gt_footnotes {
+:where(#vpqzophouf) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -424,7 +545,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#tmkbvkkimq) .gt_footnote {
+:where(#vpqzophouf) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -433,7 +554,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#tmkbvkkimq) .gt_sourcenotes {
+:where(#vpqzophouf) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -447,7 +568,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#tmkbvkkimq) .gt_sourcenote {
+:where(#vpqzophouf) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -455,69 +576,515 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#tmkbvkkimq) .gt_left {
+:where(#vpqzophouf) .gt_left {
   text-align: left;
 }
 
-:where(#tmkbvkkimq) .gt_center {
+:where(#vpqzophouf) .gt_center {
   text-align: center;
 }
 
-:where(#tmkbvkkimq) .gt_right {
+:where(#vpqzophouf) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#tmkbvkkimq) .gt_font_normal {
+:where(#vpqzophouf) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#tmkbvkkimq) .gt_font_bold {
+:where(#vpqzophouf) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#tmkbvkkimq) .gt_font_italic {
+:where(#vpqzophouf) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#tmkbvkkimq) .gt_super {
+:where(#vpqzophouf) .gt_super {
   font-size: 65%;
 }
 
-:where(#tmkbvkkimq) .gt_footnote_marks {
+:where(#vpqzophouf) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#tmkbvkkimq) .gt_asterisk {
+:where(#vpqzophouf) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#tmkbvkkimq) .gt_indent_1 {
+:where(#vpqzophouf) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#tmkbvkkimq) .gt_indent_2 {
+:where(#vpqzophouf) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#tmkbvkkimq) .gt_indent_3 {
+:where(#vpqzophouf) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#tmkbvkkimq) .gt_indent_4 {
+:where(#vpqzophouf) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#tmkbvkkimq) .gt_indent_5 {
+:where(#vpqzophouf) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
 <table class="gt_table">
-  <caption>Median (Caption)</caption>
+  <caption>Means</caption>
+  <thead class="gt_header">
+    <tr>
+      <td colspan="5" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">Gjennomsnittlige maksimale verdier</td>
+    </tr>
+    
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col">Test</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">Max Laktat</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">Max RER</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">VO<sub>2max</sub><br><small>(ml min<sup>-1</sup>)</small></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">Max fart<br><small>(km t<sup>-1</sup>)</small></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">Post</td>
+<td class="gt_row gt_right">5.98</td>
+<td class="gt_row gt_right">1.05</td>
+<td class="gt_row gt_right">3,780</td>
+<td class="gt_row gt_right">13.9</td></tr>
+    <tr><td class="gt_row gt_left">Pre</td>
+<td class="gt_row gt_right">6.69</td>
+<td class="gt_row gt_right">1.01</td>
+<td class="gt_row gt_right">3,822</td>
+<td class="gt_row gt_right">14.1</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+<div class="cell">
+
+</div>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="qyyzxiosbb" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+:where(#qyyzxiosbb) .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+:where(#qyyzxiosbb) .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#qyyzxiosbb) .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+:where(#qyyzxiosbb) .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+:where(#qyyzxiosbb) .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#qyyzxiosbb) .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#qyyzxiosbb) .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+:where(#qyyzxiosbb) .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+:where(#qyyzxiosbb) .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+:where(#qyyzxiosbb) .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+:where(#qyyzxiosbb) .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+:where(#qyyzxiosbb) .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+:where(#qyyzxiosbb) .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+:where(#qyyzxiosbb) .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+:where(#qyyzxiosbb) .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+:where(#qyyzxiosbb) .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+:where(#qyyzxiosbb) .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#qyyzxiosbb) .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+:where(#qyyzxiosbb) .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+:where(#qyyzxiosbb) .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#qyyzxiosbb) .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+:where(#qyyzxiosbb) .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+:where(#qyyzxiosbb) .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#qyyzxiosbb) .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#qyyzxiosbb) .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+:where(#qyyzxiosbb) .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+:where(#qyyzxiosbb) .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#qyyzxiosbb) .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#qyyzxiosbb) .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#qyyzxiosbb) .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#qyyzxiosbb) .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#qyyzxiosbb) .gt_left {
+  text-align: left;
+}
+
+:where(#qyyzxiosbb) .gt_center {
+  text-align: center;
+}
+
+:where(#qyyzxiosbb) .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+:where(#qyyzxiosbb) .gt_font_normal {
+  font-weight: normal;
+}
+
+:where(#qyyzxiosbb) .gt_font_bold {
+  font-weight: bold;
+}
+
+:where(#qyyzxiosbb) .gt_font_italic {
+  font-style: italic;
+}
+
+:where(#qyyzxiosbb) .gt_super {
+  font-size: 65%;
+}
+
+:where(#qyyzxiosbb) .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+:where(#qyyzxiosbb) .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+:where(#qyyzxiosbb) .gt_indent_1 {
+  text-indent: 5px;
+}
+
+:where(#qyyzxiosbb) .gt_indent_2 {
+  text-indent: 10px;
+}
+
+:where(#qyyzxiosbb) .gt_indent_3 {
+  text-indent: 15px;
+}
+
+:where(#qyyzxiosbb) .gt_indent_4 {
+  text-indent: 20px;
+}
+
+:where(#qyyzxiosbb) .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table">
+  <caption>Median</caption>
   <thead class="gt_header">
     <tr>
       <td colspan="5" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">Medianverdier</td>
@@ -561,12 +1128,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="zmewkzvwud" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="pfdecdjqrl" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#zmewkzvwud) .gt_table {
+:where(#pfdecdjqrl) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -591,7 +1158,7 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-:where(#zmewkzvwud) .gt_heading {
+:where(#pfdecdjqrl) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -603,7 +1170,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#zmewkzvwud) .gt_title {
+:where(#pfdecdjqrl) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -615,7 +1182,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-:where(#zmewkzvwud) .gt_subtitle {
+:where(#pfdecdjqrl) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -627,13 +1194,13 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-:where(#zmewkzvwud) .gt_bottom_border {
+:where(#pfdecdjqrl) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#zmewkzvwud) .gt_col_headings {
+:where(#pfdecdjqrl) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -648,7 +1215,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#zmewkzvwud) .gt_col_heading {
+:where(#pfdecdjqrl) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -668,7 +1235,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-:where(#zmewkzvwud) .gt_column_spanner_outer {
+:where(#pfdecdjqrl) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -680,15 +1247,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-:where(#zmewkzvwud) .gt_column_spanner_outer:first-child {
+:where(#pfdecdjqrl) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#zmewkzvwud) .gt_column_spanner_outer:last-child {
+:where(#pfdecdjqrl) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#zmewkzvwud) .gt_column_spanner {
+:where(#pfdecdjqrl) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -700,7 +1267,7 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-:where(#zmewkzvwud) .gt_group_heading {
+:where(#pfdecdjqrl) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -725,7 +1292,7 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-:where(#zmewkzvwud) .gt_empty_group_heading {
+:where(#pfdecdjqrl) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -740,15 +1307,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-:where(#zmewkzvwud) .gt_from_md > :first-child {
+:where(#pfdecdjqrl) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#zmewkzvwud) .gt_from_md > :last-child {
+:where(#pfdecdjqrl) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#zmewkzvwud) .gt_row {
+:where(#pfdecdjqrl) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -767,7 +1334,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-:where(#zmewkzvwud) .gt_stub {
+:where(#pfdecdjqrl) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -780,7 +1347,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#zmewkzvwud) .gt_stub_row_group {
+:where(#pfdecdjqrl) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -794,11 +1361,11 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-:where(#zmewkzvwud) .gt_row_group_first td {
+:where(#pfdecdjqrl) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#zmewkzvwud) .gt_summary_row {
+:where(#pfdecdjqrl) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -808,16 +1375,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#zmewkzvwud) .gt_first_summary_row {
+:where(#pfdecdjqrl) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#zmewkzvwud) .gt_first_summary_row.thick {
+:where(#pfdecdjqrl) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#zmewkzvwud) .gt_last_summary_row {
+:where(#pfdecdjqrl) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -827,7 +1394,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-:where(#zmewkzvwud) .gt_grand_summary_row {
+:where(#pfdecdjqrl) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -837,7 +1404,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#zmewkzvwud) .gt_first_grand_summary_row {
+:where(#pfdecdjqrl) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -847,11 +1414,11 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-:where(#zmewkzvwud) .gt_striped {
+:where(#pfdecdjqrl) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#zmewkzvwud) .gt_table_body {
+:where(#pfdecdjqrl) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -860,7 +1427,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-:where(#zmewkzvwud) .gt_footnotes {
+:where(#pfdecdjqrl) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -874,7 +1441,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#zmewkzvwud) .gt_footnote {
+:where(#pfdecdjqrl) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -883,7 +1450,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#zmewkzvwud) .gt_sourcenotes {
+:where(#pfdecdjqrl) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -897,7 +1464,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#zmewkzvwud) .gt_sourcenote {
+:where(#pfdecdjqrl) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -905,69 +1472,69 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#zmewkzvwud) .gt_left {
+:where(#pfdecdjqrl) .gt_left {
   text-align: left;
 }
 
-:where(#zmewkzvwud) .gt_center {
+:where(#pfdecdjqrl) .gt_center {
   text-align: center;
 }
 
-:where(#zmewkzvwud) .gt_right {
+:where(#pfdecdjqrl) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#zmewkzvwud) .gt_font_normal {
+:where(#pfdecdjqrl) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#zmewkzvwud) .gt_font_bold {
+:where(#pfdecdjqrl) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#zmewkzvwud) .gt_font_italic {
+:where(#pfdecdjqrl) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#zmewkzvwud) .gt_super {
+:where(#pfdecdjqrl) .gt_super {
   font-size: 65%;
 }
 
-:where(#zmewkzvwud) .gt_footnote_marks {
+:where(#pfdecdjqrl) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#zmewkzvwud) .gt_asterisk {
+:where(#pfdecdjqrl) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#zmewkzvwud) .gt_indent_1 {
+:where(#pfdecdjqrl) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#zmewkzvwud) .gt_indent_2 {
+:where(#pfdecdjqrl) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#zmewkzvwud) .gt_indent_3 {
+:where(#pfdecdjqrl) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#zmewkzvwud) .gt_indent_4 {
+:where(#pfdecdjqrl) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#zmewkzvwud) .gt_indent_5 {
+:where(#pfdecdjqrl) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
 <table class="gt_table">
-  <caption>SD (Caption)</caption>
+  <caption>SD</caption>
   <thead class="gt_header">
     <tr>
       <td colspan="5" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">Standardavvik</td>
@@ -1005,9 +1572,488 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<div class="cell">
+
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>data_run_2 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/data.run.2.xlsx"</span>) </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>data_run_2 <span class="sc">%&gt;%</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Timepoint,FP, VO2.max, RER.max, lac.max,end.load) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Timepoint) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">lac =</span> <span class="fu">var</span>(lac.max),</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">RER =</span> <span class="fu">var</span>(RER.max),</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">VO2 =</span> <span class="fu">var</span>(VO2.max),</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">end.load =</span> <span class="fu">var</span>(end.load)) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>(<span class="at">caption =</span> <span class="st">"VARIANCE"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_number</span>(<span class="at">columns =</span>lac, <span class="at">decimals =</span> <span class="dv">2</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_number</span>(<span class="at">columns =</span> VO2, <span class="at">decimals =</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_number</span>(<span class="at">columns =</span> end.load, <span class="at">decimals =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_number</span>(<span class="at">columns =</span> RER, <span class="at">decimals =</span> <span class="dv">2</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>(<span class="at">Timepoint =</span> <span class="st">"Test"</span>,</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>             <span class="at">lac =</span> <span class="st">"Max Laktat"</span>,</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>             <span class="at">RER =</span> <span class="st">"Max RER"</span>,</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>             <span class="at">VO2 =</span> <span class="fu">md</span>(<span class="st">"VO&lt;sub&gt;2max&lt;/sub&gt;&lt;br&gt;&lt;small&gt;(ml min&lt;sup&gt;-1&lt;/sup&gt;)"</span>),</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>             <span class="at">end.load =</span> <span class="fu">md</span>(<span class="st">"Max fart&lt;br&gt;&lt;small&gt;(km t&lt;sup&gt;-1&lt;/sup&gt;)"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(<span class="at">title =</span> <span class="st">"VARIANS"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div id="zjxpfiyupy" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+:where(#zjxpfiyupy) .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+:where(#zjxpfiyupy) .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#zjxpfiyupy) .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+:where(#zjxpfiyupy) .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+:where(#zjxpfiyupy) .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#zjxpfiyupy) .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#zjxpfiyupy) .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+:where(#zjxpfiyupy) .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+:where(#zjxpfiyupy) .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+:where(#zjxpfiyupy) .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+:where(#zjxpfiyupy) .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+:where(#zjxpfiyupy) .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+:where(#zjxpfiyupy) .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+:where(#zjxpfiyupy) .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+:where(#zjxpfiyupy) .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+:where(#zjxpfiyupy) .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+:where(#zjxpfiyupy) .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#zjxpfiyupy) .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+:where(#zjxpfiyupy) .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+:where(#zjxpfiyupy) .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#zjxpfiyupy) .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+:where(#zjxpfiyupy) .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+:where(#zjxpfiyupy) .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#zjxpfiyupy) .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#zjxpfiyupy) .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+:where(#zjxpfiyupy) .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+:where(#zjxpfiyupy) .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#zjxpfiyupy) .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#zjxpfiyupy) .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#zjxpfiyupy) .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#zjxpfiyupy) .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#zjxpfiyupy) .gt_left {
+  text-align: left;
+}
+
+:where(#zjxpfiyupy) .gt_center {
+  text-align: center;
+}
+
+:where(#zjxpfiyupy) .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+:where(#zjxpfiyupy) .gt_font_normal {
+  font-weight: normal;
+}
+
+:where(#zjxpfiyupy) .gt_font_bold {
+  font-weight: bold;
+}
+
+:where(#zjxpfiyupy) .gt_font_italic {
+  font-style: italic;
+}
+
+:where(#zjxpfiyupy) .gt_super {
+  font-size: 65%;
+}
+
+:where(#zjxpfiyupy) .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+:where(#zjxpfiyupy) .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+:where(#zjxpfiyupy) .gt_indent_1 {
+  text-indent: 5px;
+}
+
+:where(#zjxpfiyupy) .gt_indent_2 {
+  text-indent: 10px;
+}
+
+:where(#zjxpfiyupy) .gt_indent_3 {
+  text-indent: 15px;
+}
+
+:where(#zjxpfiyupy) .gt_indent_4 {
+  text-indent: 20px;
+}
+
+:where(#zjxpfiyupy) .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table">
+  <caption>VARIANCE</caption>
+  <thead class="gt_header">
+    <tr>
+      <td colspan="5" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">VARIANS</td>
+    </tr>
+    
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col">Test</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">Max Laktat</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">Max RER</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">VO<sub>2max</sub><br><small>(ml min<sup>-1</sup>)</small></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">Max fart<br><small>(km t<sup>-1</sup>)</small></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">Post</td>
+<td class="gt_row gt_right">3.17</td>
+<td class="gt_row gt_right">0.01</td>
+<td class="gt_row gt_right">1,049,849</td>
+<td class="gt_row gt_right">8.0</td></tr>
+    <tr><td class="gt_row gt_left">Pre</td>
+<td class="gt_row gt_right">2.48</td>
+<td class="gt_row gt_right">0.00</td>
+<td class="gt_row gt_right">1,198,619</td>
+<td class="gt_row gt_right">8.6</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+<p>Vårt forsøk viser svært liten reabilitet for testen vi har har utført, noe som i stor grad kan forklares av en rekke innlysende faktorer. For det første er protokollen endret underveis, og selv om dette ikke skal påvirke forholdet mellom pre- og post-testingen er det en svakhet ved forsøket. Grunnet stort tidspress i labben er også en rekke av forsøkspersonene testet rett hverandre, med kun 10 minutter mellom testene. En feilkilde er konstant utskiftning av testpersonell en sentral faktor. Når testene utføres av forskjellig testpersonell vil dette kunne gi utslag på resultatene, og være en feilkilde for spesielt “within-subject variation” <span class="citation" data-cites="hopkins2000">(<a href="#ref-hopkins2000" role="doc-biblioref">Hopkins 2000</a>)</span>. Eksempelvis vil resultatet på laktatprøvene avhenge av hvordan testeren tar selve prøven, hvor lang tid som brukes, og om prøven utføres korrekt.</p>
+</section>
+<section id="referanser" class="level1">
+<h1>Referanser</h1>
+<p>Tanner, R. K., and C. J. Gore. 2012. Physiological Tests for Elite Athletes 2nd Edition. Book. Human Kinetics. https://books.google.no/books?id=0OPIiMks58MC</p>
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-halperin2015" class="csl-entry" role="doc-biblioentry">
+Halperin, Israel, David B. Pyne, and David T. Martin. 2015. <span>“Threats to Internal Validity in Exercise Science: A Review of Overlooked Confounding Variables.”</span> <em>International Journal of Sports Physiology and Performance</em> 10 (7): 823–29. <a href="https://doi.org/10.1123/ijspp.2014-0566">https://doi.org/10.1123/ijspp.2014-0566</a>.
+</div>
+<div id="ref-hopkins2000" class="csl-entry" role="doc-biblioentry">
+Hopkins, Will G. 2000. <span>“Measures of Reliability in Sports Medicine and Science.”</span> <em>Sports Medicine</em> 30 (1): 1–15. <a href="https://doi.org/10.2165/00007256-200030010-00001">https://doi.org/10.2165/00007256-200030010-00001</a>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
