@@ -38,6 +38,7 @@ data_run_2 %>%
              RER = "Max RER",
              VO2 = md("VO<sub>2max</sub><br><small>(ml min<sup>-1</sup>)"),
              end.load = md("Max fart<br><small>(km t<sup>-1</sup>)")) %>%
-  tab_header(title = "VARIANS") 
+  tab_header(title = "VARIANS")
+
 
 ```

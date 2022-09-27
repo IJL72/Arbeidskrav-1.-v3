@@ -47,6 +47,7 @@ Mølle på 1 % stigning, 5 min drag med 1 min pause. Utgangshastighet på 8,5 km
 ```{r,echo=FALSE}
 #| message: false
 #| warning: false
+#| include: false
 
 library(tidyverse)
 library(readxl)
