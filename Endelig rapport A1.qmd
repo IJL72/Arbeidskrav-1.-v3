@@ -239,7 +239,10 @@ data_run_2 %>%
 
 ```
 
-```{r setup, include=FALSE}
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
 
 data_run_2 <- read_excel("data/data.run.2.xlsx")
 
@@ -253,6 +256,14 @@ summarise(s = sd(diff),
 te = s / sqrt(2),
 m = mean(c(Pre, Post)),
 cv = 100 * (te / m)) %>%
+  
+  gt(caption = "Maksimal laktat")
+cols_label(s = "s",
+           te = "typical error",
+           m = "mean"
+           cv = "relativ SD")
+tab_header(title = "data")
+
 print()
 ```
 
