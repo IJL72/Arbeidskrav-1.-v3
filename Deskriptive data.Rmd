@@ -4,7 +4,7 @@ author: "IJL & HH"
 date: "2022-09-23"
 output: html_document
 editor_options: 
-  chunk_output_type: console
+  chunk_output_type: inline
 ---
 
 ```{r,echo=FALSE}
@@ -17,7 +17,7 @@ data_run_2
 dat <- read_excel("data/data.run.2.xlsx")%>% 
   
   
-  select(FP,Timepoint, Age, Height, Weigth, start.load, end.load, VO2.max,lac.max, HR.max, RER.max) %>% 
+  select(FP,Timepoint, Gender, Age, Height, Weigth, start.load, end.load, VO2.max,lac.max, HR.max, RER.max) %>% 
   print()
 
 ```
