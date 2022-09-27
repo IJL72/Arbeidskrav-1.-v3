@@ -5,24 +5,20 @@ date: "2022-09-26"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r, echo=FALSE}
+
 
 library(ggplot2)
+library(tidyverse)
 data("data_run_2")
 glimpse(data_run_2)
 
-# Assign a selected set of variables to a smaller data set
-rundat <- select(data_run_2, FP, Timepoint, VO2.max, lac.max, HR.max)
-# Printing the data set
-rundat
+ggplot(data = data_run_2, mapping = aes(x =  Timepoint, y = lac.max)) +    
+  geom_boxplot() + geom_jitter() +
+  labs(x = "Timepoint", y= "Maksimal laktat(mmol/l)",
+       title = "Maksimal laktat")
 
-# Creating a boxplot of all values per group
-ggplot(data_run_2, aes(FP, lac.max)) 
-+ geom_boxplot() + geom_jitter()
-
-
-
+ 
 
 ```
 
