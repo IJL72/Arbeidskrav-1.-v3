@@ -3,6 +3,8 @@ title: "Table2 Median"
 author: "IJL & HH"
 date: "2022-09-21"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r, echo=FALSE}
@@ -17,6 +19,7 @@ library(readxl)
 ```{r, echo=FALSE}
 
 data_run_2 <- read_excel("data/data.run.2.xlsx") 
+
 data_run_2 %>%
   select(Timepoint,FP, VO2.max, RER.max, lac.max,end.load) %>% 
   group_by(Timepoint) %>% 
@@ -24,7 +27,7 @@ data_run_2 %>%
             RER = median(RER.max),
             VO2 = median(VO2.max),
             end.load = mean(end.load)) %>% 
-  gt(caption = "Median (Caption)") %>% 
+  gt(caption = "Median") %>% 
   fmt_number(columns =lac,
              decimals = 2) %>% 
   fmt_number(columns = VO2, decimals =0) %>% 
