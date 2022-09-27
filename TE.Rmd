@@ -19,7 +19,17 @@ data_run_2 %>%
   select(Timepoint, FP, lac.max) %>%
     group_by(Timepoint) %>%
     summarise(lac = sd(lac.max),
-                 te = lac / sqrt(2))
+```
+
+
+```{r}
+
+library(tidyverse)
+library(readxl)
+
+dat <- read_excel("data/data.run.2.xlsx") %>%
+        select(FP,Timepoint, lac.max = `mmol/l`) %>%
+        print()
 ```
 
 

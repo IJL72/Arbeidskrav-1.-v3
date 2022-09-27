@@ -17,7 +17,11 @@ data_run_2
 dat <- read_excel("data/data.run.2.xlsx")%>% 
   
   
+<<<<<<< HEAD
+  select(FP,Timepoint, Gender, Age, Height, Weigth, start.load, end.load, VO2.max,lac.max, HR.max, RER.max) %>% 
+=======
   select(FP, Gender,Timepoint, Age, Height, Weigth, start.load, end.load, VO2.max,lac.max, HR.max, RER.max) %>% 
+>>>>>>> 209b004f97e6fe400f33e0c6f837a80e5063fbd7
   print()
 
 ```
