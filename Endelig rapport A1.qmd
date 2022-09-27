@@ -64,7 +64,12 @@ data_run_2 <- read_excel("data/data.run.2.xlsx")%>%
 
 ```
 
-```{r, echo = FALSE}
+```{r}
+#| message: false
+#| warning: false
+#| include: false
+#| echo: false
+
 library(ggplot2)
 library(tidyverse)
 
@@ -80,10 +85,12 @@ ggplot(data = data_run_2, mapping = aes(x =  Timepoint, y = lac.max)) +
 
 # Resultater
 
-```{r, echo=FALSE}
+```{r}
 
 #| message: false
 #| warning: false
+#| include: false
+#| echo: false
 
 library(gt)
 library(exscidata)
@@ -94,11 +101,12 @@ library(readxl)
 
 ```
 
-```{r, echo=FALSE}
-
+```{r}
 
 #| message: false
 #| warning: false
+#| include: false
+#| echo: false
 
 data_run_2 <- read_excel("data/data.run.2.xlsx") 
 
@@ -125,7 +133,11 @@ data_run_2 %>%
 
 ```
 
-```{r, echo=FALSE}
+```{r}
+#| message: false
+#| warning: false
+#| include: false
+#| echo: false
 
 library(tidyverse)
 library(gt)
@@ -136,7 +148,12 @@ library(readxl)
 
 ```
 
-```{r,echo=FALSE}
+```{r,}
+
+#| message: false
+#| warning: false
+#| include: false
+#| echo: false
 
 data_run_2 <- read_excel("data/data.run.2.xlsx") 
 
@@ -164,7 +181,12 @@ data_run_2 <- read_excel("data/data.run.2.xlsx")
 
 ```
 
-```{r,echo=FALSE}
+```{r}
+#| message: false
+#| warning: false
+#| include: false
+#| echo: false
+
 library(tidyverse)
 library(gt)
 library(tidyr)
@@ -173,10 +195,12 @@ library(readxl)
 
 ```
 
-```{r,echo=FALSE}
+```{r}
 
 #| message: false
 #| warning: false
+#| include: false
+#| echo: false
 data_run_2 <- read_excel("data/data.run.2.xlsx") 
 
   data_run_2 %>%
@@ -201,9 +225,12 @@ data_run_2 <- read_excel("data/data.run.2.xlsx")
   tab_footnote(footnote = "SD av maksimale verdier")
 ```
 
-```{r, echo=FALSE}
+```{r}
+
 #| message: false
 #| warning: false
+#| include: false
+#| echo: false
 
 library(tidyverse)
 library(gt)
@@ -214,6 +241,9 @@ library(readxl)
 ```
 
 ```{r}
+#| message: false
+#| warning: false
+#| include: false
 #| echo: false
 data_run_2 <- read_excel("data/data.run.2.xlsx") 
 
@@ -240,8 +270,11 @@ data_run_2 %>%
 
 ```{r}
 #| message: false
-#| echo: false
 #| warning: false
+#| include: false
+#| echo: false
+
+library(dplyr)
 
 data_run_2 <- read_excel("data/data.run.2.xlsx")
 
@@ -259,18 +292,47 @@ cv = 100 * (te / m)) %>%
   gt(caption = "Maksimal laktat")
 cols_label(s = "s",
            te = "typical error",
-           m = "mean"
+           m = "mean",
            cv = "relativ SD")
 tab_header(title = "data")
 
 print()
 ```
 
-<<<<<<< HEAD
-I vårt forsøk er Typical Error (TE) beregnet til 1,08. Standardavvik er befor testen vi har har utført, noe som i stor grad kan forklares av en rekke innlysende faktorer. For det første er protokollen endret underveis, og selv om dette ikke skal påvirke forholdet mellom pre- og post-testingen er det en svakhet ved forsøket. Grunnet stort tidspress i labben er også en rekke av forsøkspersonene testet rett hverandre, med kun 10 minutter mellom testene. En feilkilde er konstant utskiftning av testpersonell en sentral faktor. Når testene utføres av forskjellig testpersonell vil dette kunne gi utslag på resultatene, og være en feilkilde for spesielt "within-subject variation" [@hopkins2000]. Eksempelvis vil resultatet på laktatprøvene avhenge av hvordan testeren tar selve prøven, hvor lang tid som brukes, og om prøven utføres korrekt.
-=======
-Vårt forsøk viser svært liten reabilitet for testen vi har har utført, noe som i stor grad kan forklares av en rekke innlysende faktorer. For det første er protokollen endret underveis, og selv om dette ikke skal påvirke forholdet mellom pre- og post-testingen er det en svakhet ved forsøket. Grunnet stort tidspress i labben er også en rekke av forsøkspersonene testet rett hverandre, med kun 10 minutter mellom testene. En feilkilde er konstant utskiftning av testpersonell en sentral faktor. Når testene utføres av forskjellig testpersonell vil dette kunne gi utslag på resultatene, og være en feilkilde for spesielt "within-subject variation" [@hopkins2000]. Eksempelvis vil resultatet på laktatprøvene avhenge av hvordan testeren tar selve prøven, hvor lang tid som brukes, og om prøven utføres korrekt.
->>>>>>> f51381f61031eb935011bdcaf262cd965230bb1c
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(forcats)
+library(ggplot2)
+
+data_run_2 <- read_excel("data/data.run.2.xlsx") %>% 
+  mutate(Timepoint = factor(Timepoint,
+                            levels = c("Pre", "Post"),
+                            labels = c("Test", "Re-test")
+         subject = factor(FP))
+
+ggplot(data = data_run_2, aes(x = Timepoint, y = lac.max,
+                              color = FP,
+                              group = FP)) +
+  geom_point()+
+  geom_line() +
+  
+  labs(x = "Timepoint",
+       y = "Maximal Laktat, mmol/l") 
+
+                                       
+```
+```
+
+Vi har valgt å gjøre beregninger ut fra høyeste målte laktat pr test.  Test ble ikke  gjennomført  helt i henhold  til prookoll, grunnet tidsnød i lab. Flere av forsøkspersonene  ble  testet rett hverandre, med kun 10 minutter mellom testene.
+Protokollen  ble endret underveis, og selv om dette ikke skal påvirke forholdet mellom pre- og post-testingen er det en svakhet ved forsøket. 
+Konstant utskiftning av testpersonell en sentral faktor til feilkilde. Når testene utføres av forskjellig testpersonell vil dette kunne gi utslag på resultatene, og være en feilkilde for spesielt "within-subject variation" [@hopkins2000]. Eksempelvis vil resultatet på laktatprøvene avhenge av hvordan testeren tar selve prøven, hvor lang tid som brukes, og om prøven utføres korrekt.
+
+I vårt forsøk er Typical Error (TE) beregnet til 1,08. Standardavvik (s) er beregnet til 1,53 og varasjonskoeffisient (cv) til 17%.
+Dette  forteller oss at  testen synes å være reliabel.
+
 
 # Referanser
 
