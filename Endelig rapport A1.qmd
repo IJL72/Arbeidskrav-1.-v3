@@ -91,7 +91,6 @@ ggplot(data = data_run_2, mapping = aes(x =  Timepoint, y = lac.max)) +
 
 # Resultater
 
-
 ```{r}
 
 #Tabell - Mean
@@ -132,8 +131,6 @@ data_run_2 %>%
 
 
 ```
-
-
 
 ```{r}
 
@@ -177,8 +174,6 @@ data_run_2 <- read_excel("data/data.run.2.xlsx")
 
 ```
 
-
-
 ```{r}
 
 # Tabell Standardavvik
@@ -216,8 +211,6 @@ data_run_2 <- read_excel("data/data.run.2.xlsx")
   tab_header(title = "Standardavvik") %>% 
   tab_footnote(footnote = "SD av maksimale verdier")
 ```
-
-
 
 ```{r}
 
