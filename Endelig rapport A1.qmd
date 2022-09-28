@@ -5,7 +5,7 @@ format: html
 editor: visual
 bibliography: references.bib
 editor_options: 
-  chunk_output_type: console
+  chunk_output_type: inline
 ---
 
 # Testbeskrivelse
@@ -289,16 +289,18 @@ library(tidyverse)
 library(ggplot2)
 
 data_run_2 <- read_excel("data/data.run.2.xlsx") %>%
+  
   mutate(Timepoint = factor(Timepoint,
                             levels = c("Pre", "Post"),
                             labels = c("Test", "Re-test")),
-         subject = factor(FP)) %>% 
+         subject = factor(FP))
+    
 ggplot(data = data_run_2, aes(x = Timepoint, y = lac.max,
                               color = FP,
                               group = FP)) +
 geom_point() +
   geom_line() +
-  
+
   labs(x = "Test",
        y = "Maximal Laktat, mmol/l") 
     
