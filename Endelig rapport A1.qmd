@@ -316,9 +316,8 @@ ggplot(data = data_run_2, aes(x = Timepoint, y = lac.max,
                               color = FP,
                               group = FP,
                               position = )) +
-                              
-  geom_point()+
-  geom_line() +
+geom_point()+
+geom_line()+
   labs(x = "Timepoint",
        y = "Maximal Laktat, mmol/l") 
     
