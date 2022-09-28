@@ -47,6 +47,8 @@ Mølle på 1 % stigning, 5 min drag med 1 min pause. Utgangshastighet på 8,5 km
 # Deskriptive data
 
 ```{r}
+#Deskriptive data
+
 #| message: false
 #| warning: false
 #| include: false
@@ -55,6 +57,8 @@ Mølle på 1 % stigning, 5 min drag med 1 min pause. Utgangshastighet på 8,5 km
 library(tidyverse)
 library(readxl)
 library(readr)
+
+
 
 data_run_2 <- read_excel("data/data.run.2.xlsx")%>% 
   
@@ -65,6 +69,8 @@ data_run_2 <- read_excel("data/data.run.2.xlsx")%>%
 ```
 
 ```{r}
+# Deskriptive data  Boxplot
+
 #| message: false
 #| warning: false
 #| include: false
@@ -85,28 +91,22 @@ ggplot(data = data_run_2, mapping = aes(x =  Timepoint, y = lac.max)) +
 
 # Resultater
 
+
 ```{r}
+
+#Tabell - Mean
 
 #| message: false
 #| warning: false
 #| include: false
 #| echo: false
+
 
 library(gt)
 library(exscidata)
 library(tidyverse)
 library(tidyr)
 library(readxl)
-
-
-```
-
-```{r}
-
-#| message: false
-#| warning: false
-#| include: false
-#| echo: false
 
 data_run_2 <- read_excel("data/data.run.2.xlsx") 
 
@@ -133,11 +133,11 @@ data_run_2 %>%
 
 ```
 
+
+
 ```{r}
-#| message: false
-#| warning: false
-#| include: false
-#| echo: false
+
+# Tabell Median
 
 library(tidyverse)
 library(gt)
@@ -145,10 +145,6 @@ library(tidyr)
 library(exscidata)
 library(readxl)
 
-
-```
-
-```{r,}
 
 #| message: false
 #| warning: false
@@ -181,21 +177,17 @@ data_run_2 <- read_excel("data/data.run.2.xlsx")
 
 ```
 
+
+
 ```{r}
-#| message: false
-#| warning: false
-#| include: false
-#| echo: false
+
+# Tabell Standardavvik
 
 library(tidyverse)
 library(gt)
 library(tidyr)
 library(exscidata)
 library(readxl)
-
-```
-
-```{r}
 
 #| message: false
 #| warning: false
@@ -225,12 +217,11 @@ data_run_2 <- read_excel("data/data.run.2.xlsx")
   tab_footnote(footnote = "SD av maksimale verdier")
 ```
 
+
+
 ```{r}
 
-#| message: false
-#| warning: false
-#| include: false
-#| echo: false
+# Tabell Varians
 
 library(tidyverse)
 library(gt)
@@ -238,9 +229,6 @@ library(tidyr)
 library(exscidata)
 library(readxl)
 
-```
-
-```{r}
 #| message: false
 #| warning: false
 #| include: false
@@ -269,6 +257,8 @@ data_run_2 %>%
 ```
 
 ```{r}
+#Tabell beregninger S, TE, M og CV
+
 #| message: false
 #| warning: false
 #| include: false
@@ -294,43 +284,38 @@ data_run_2 %>%
 
 ```
 
-
 ```{r}
+#Grafisk fremstilling av reliabilitet
+
 #| message: false
 #| warning: false
 #| include: false
 #| echo: false
 
 library(tidyverse)
-library(forcats)
 library(ggplot2)
 
 data_run_2 <- read_excel("data/data.run.2.xlsx") %>%
-  
   mutate(Timepoint = factor(Timepoint,
-                            levels = c(Pre, Post),
-                            labels = c("Test", "Re-test"),
+                            levels = c("Pre", "Post"),
+                            labels = c("Test", "Re-test")),
          subject = factor(FP)) %>% 
-
 ggplot(data = data_run_2, aes(x = Timepoint, y = lac.max,
                               color = FP,
-                              group = FP,
-                              position = )) +
-geom_point()+
-geom_line()+
-  labs(x = "Timepoint",
+                              group = FP)) +
+geom_point() +
+  geom_line() +
+  
+  labs(x = "Test",
        y = "Maximal Laktat, mmol/l") 
     
 ```
-```
 
-Vi har valgt å gjøre beregninger ut fra høyeste målte laktat pr test.  Test ble ikke  gjennomført  helt i henhold  til protokoll, grunnet tidsnød i lab. Flere av forsøkspersonene  ble  testet rett hverandre, med kun 10 minutter mellom testene. 
-Protokollen  ble endret underveis, og selv om dette ikke skal påvirke forholdet mellom pre- og post-testingen er det en svakhet ved forsøket. 
-Konstant utskiftning av testpersonell også en sentral faktor til feilkilde. Når testene utføres av forskjellig testpersonell vil dette kunne gi utslag på resultatene, og være en feilkilde for spesielt "within-subject variation" [@hopkins2000]. Eksempelvis vil resultatet på laktatprøvene avhenge av hvordan testeren tar selve prøven, hvor lang tid som brukes, og om prøven utføres korrekt.
+Konklusjon:
 
-I vårt forsøk er Typical Error (TE) beregnet til 1,08. Standardavvik (s) er beregnet til 1,53 og varasjonskoeffisient (cv) til 17%.
-Dette  forteller oss at  testen synes å være reliabel.
+Vi har valgt å gjøre beregninger ut fra høyeste målte laktat pr test. Test ble ikke gjennomført helt i henhold til protokoll, grunnet tidsnød i lab. Flere av forsøkspersonene ble testet rett hverandre, med kun 10 minutter mellom testene. Protokollen ble endret underveis, og selv om dette ikke skal påvirke forholdet mellom pre- og post-testingen er det en svakhet ved forsøket. Konstant utskiftning av testpersonell også en sentral faktor til feilkilde. Når testene utføres av forskjellig testpersonell vil dette kunne gi utslag på resultatene, og være en feilkilde for spesielt "within-subject variation" [@hopkins2000]. Eksempelvis vil resultatet på laktatprøvene avhenge av hvordan testeren tar selve prøven, hvor lang tid som brukes, og om prøven utføres korrekt.
 
+I vårt forsøk er Typical Error (TE) beregnet til 1,08. Standardavvik (s) er beregnet til 1,53 og varasjonskoeffisient (cv) til 17%. Dette forteller oss at testen synes å være reliabel.
 
 # Referanser
 
